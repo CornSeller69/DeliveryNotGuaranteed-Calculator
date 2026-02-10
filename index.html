@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Delivery Not Guaranteed Calculator</title>
+      <link rel="shortcut icon" href="https://static.wikia.nocookie.net/delivery-not-guarantee/images/e/e6/Site-logo.png/revision/latest?cb=20251010222556" type="image/x-icon">
+      <link rel="stylesheet" href="dngc.css">
+</head>
+<body oninput="calcul()" onload="resetvals()">
+      <input type="number" id="crewamt" placeholder="Crew Amount" value="1" min="1"><b>  Crew Amount</b><br>
+      <input type="number" id="shipwgt" placeholder="Ship's Max Haul" value="0" min="0"><b>  Ship's Max Haul</b><br>
+      <input type="number" id="cargowgt" placeholder="Cargo Weight" value="0" min="0"><b>  Cargo Weight</b><br>
+      <input type="number" id="cargoamt" placeholder="Cargo Amount" value="0" min="0">
+      <input type="button" value="+1" onclick="plusonecargo(); calcul();"><b>  Cargo Amount</b><br>
+      <input type="number" id="addit" placeholder="Additional" value="0" min="0"><b>  Additional</b><br>
+      <h1 id="wynik">...</h1>
+</body>
+<script src="dngc.js"></script>
+</html>
